@@ -3,22 +3,92 @@
     padding: 0;
     box-sizing: border-box;
 }
-
- body {
-    padding: 2rem;
-    background-color: #333;
-    color: whitesmoke;
-    min-height: 100vh;
+/* Apply a smooth, modern font and background gradient */
+body {
+    margin: 0;
+    padding: 0;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 2rem;
-    font-size: 2rem;
+    min-height: 100vh;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Sophisticated Purple/Blue Gradient */
+    color: #fff;
+}
 
- }
+/* Container for your content */
+/* If your HTML has a container div, this applies there. If not, it styles the body content */
+form {
+    background: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
+    backdrop-filter: blur(10px);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
 
-input, button{
-    font-size: 2rem;
-    padding: 1rem;
-    border-radius: 10px;
-} 
+/* The Heading: "Get Weather Conditions" */
+h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.5px;
+}
+
+/* The Input Field */
+input[type="text"], 
+input[name="city"] {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 1.2rem;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    color: #333;
+    box-sizing: border-box; /* Ensures padding doesn't break width */
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+input:focus {
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* The Submit Button */
+button, 
+input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: #ffffff;
+    color: #764ba2; /* Matches the gradient */
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Placeholder color styling */
+::placeholder {
+    color: #999;
+    opacity: 1;
+}
