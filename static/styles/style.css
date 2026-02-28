@@ -1,19 +1,17 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 /* Apply a smooth, modern font and background gradient */
 body {
     margin: 0;
-    padding: 0;
+    padding: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Sophisticated Purple/Blue Gradient */
     color: #fff;
+    text-align: center;
 }
 
 /* Container for your content */
@@ -31,7 +29,7 @@ form {
 }
 
 /* The Heading: "Get Weather Conditions" */
-h1 {
+h1, h2, p {
     font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
