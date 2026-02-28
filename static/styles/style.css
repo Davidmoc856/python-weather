@@ -36,6 +36,8 @@ h1 {
     font-weight: 700;
     margin-bottom: 1.5rem;
     letter-spacing: -0.5px;
+    text-align: center;
+    width: 100%;
 }
 
 /* The Input Field */
